@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Find Scholarships — ScholarMatch</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <div class="site">
+    <header class="header-bar"><div class="header-inner"><div class="brand"><div class="logo">SM</div><div><div class="title">ScholarMatch</div><div class="subtitle">Eligibility Test</div></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="scholarships.html">Browse</a><a href="test.html" class="active">Find Scholarships</a><a href="data.html">Data</a><a href="documents.html">Documents</a><a href="contact.html">Contact</a><a href="about.html">About</a></nav></div></header>
+
+    <section class="hero-section-small">
+      <div class="container">
+        <h1>Find Your Scholarships</h1>
+        <p>Take a quick eligibility test and discover which scholarships match your profile.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid" style="margin-top:18px">
+          <main>
+            <!-- reveal inputs -->
+            <input type="checkbox" id="reveal-merit" class="reveal-hidden">
+            <input type="checkbox" id="reveal-need" class="reveal-hidden">
+            <input type="checkbox" id="reveal-stem" class="reveal-hidden">
+            <input type="checkbox" id="reveal-rural" class="reveal-hidden">
+            <input type="checkbox" id="reveal-private" class="reveal-hidden">
+
+            <div class="details-box">
+              <form>
+                <div class="form-row">
+                  <div><label class="small">1. Education level</label><select class="input"><option>Class 9–10</option><option>11–12</option><option>Undergraduate</option><option>Postgraduate</option></select></div>
+                  <div><label class="small">2. Family income</label><select class="input"><option>Below ₹3,00,000</option><option>₹3,00,000–₹8,00,000</option><option>Above ₹8,00,000</option></select></div>
+                </div>
+
+                <div class="form-row">
+                  <div><label class="small">3. Category</label><select class="input"><option>General</option><option>OBC</option><option>SC</option><option>ST</option></select></div>
+                  <div><label class="small">4. Gender</label><select class="input"><option>Male</option><option>Female</option><option>Other</option></select></div>
+                </div>
+
+                <div class="form-row">
+                  <div><label class="small">5. State of residence</label><select class="input"><option>Uttar Pradesh</option><option>Bihar</option><option>Madhya Pradesh</option><option>Rajasthan</option><option>Other</option></select></div>
+                  <div><label class="small">6. Type of institution</label><select class="input"><option>Government</option><option>Private</option></select></div>
+                </div>
+
+                <div class="form-row">
+                  <div><label class="small">7. Mode</label><select class="input"><option>Regular</option><option>Distance</option></select></div>
+                  <div><label class="small">8. Academic %</label><select class="input"><option>Below 50%</option><option>50–60%</option><option>60–70%</option><option>70–80%</option><option>80%+</option></select></div>
+                </div>
+
+                <div class="form-row" style="margin-top:12px">
+                  <div><label class="small">9. Field of study</label><select class="input"><option>Science</option><option>Commerce</option><option>Arts</option><option>Engineering / STEM</option><option>Other</option></select></div>
+                  <div><label class="small">10. Rural?</label><select class="input"><option>No</option><option>Yes</option></select></div>
+                </div>
+
+                <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+                  <label for="reveal-merit" class="btn primary">Show Merit scholarships</label>
+                  <label for="reveal-need" class="btn primary">Show Need scholarships</label>
+                  <label for="reveal-stem" class="btn primary">Show STEM scholarships</label>
+                  <label for="reveal-rural" class="btn primary">Show Rural scholarships</label>
+                  <label for="reveal-private" class="btn primary">Show Private/Distance</label>
+                </div>
+              </form>
+            </div>
+
+            <!-- revealed groups -->
+            <div class="eligible merit details-box">
+              <h3>Merit Scholarships</h3>
+              <div class="list" style="margin-top:10px">
+                <a class="card" href="details-nm.html"><div class="card-left"><div class="icon">NM</div><div><div class="card-title">National Merit Scholarship</div><div class="card-sub">Merit • ₹50,000 • 20 Jan 2026</div></div></div><div class="card-right"><div class="meta">Merit</div></div></a>
+                <a class="card" href="details-seg.html"><div class="card-left"><div class="icon">ST</div><div><div class="card-title">STEM Excellence Grant</div><div class="card-sub">UG STEM • ₹80,000 • 10 Feb 2026</div></div></div><div class="card-right"><div class="meta">STEM</div></div></a>
+              </div>
+            </div>
+
+            <div class="eligible need details-box">
+              <h3>Need Scholarships</h3>
+              <div class="list" style="margin-top:10px">
+                <a class="card" href="details-pm.html"><div class="card-left"><div class="icon">PM</div><div><div class="card-title">Post Matric State Scholarship</div><div class="card-sub">Need • Tuition • 30 Dec 2025</div></div></div><div class="card-right"><div class="meta">Need</div></div></a>
+              </div>
+            </div>
+
+            <div class="eligible stem details-box">
+              <h3>STEM Scholarships</h3>
+              <div class="list" style="margin-top:10px">
+                <a class="card" href="details-seg.html"><div class="card-left"><div class="icon">ST</div><div><div class="card-title">STEM Excellence Grant</div><div class="card-sub">UG STEM • ₹80,000</div></div></div><div class="card-right"><div class="meta">STEM</div></div></a>
+              </div>
+            </div>
+
+            <div class="eligible rural details-box">
+              <h3>Rural Scholarships</h3>
+              <div class="list" style="margin-top:10px">
+                <a class="card" href="details-rt.html"><div class="card-left"><div class="icon">RT</div><div><div class="card-title">Rural Talent Support Scheme</div><div class="card-sub">Rural • Varies • 1 Mar 2026</div></div></div><div class="card-right"><div class="meta">Rural</div></div></a>
+              </div>
+            </div>
+
+            <div class="eligible private details-box">
+              <h3>Private / Distance</h3>
+              <div class="list" style="margin-top:10px">
+                <a class="card" href="details-bf.html"><div class="card-left"><div class="icon">BF</div><div><div class="card-title">Bright Future Private Award</div><div class="card-sub">Private • ₹20,000 • 15 Jan 2026</div></div></div><div class="card-right"><div class="meta">Private</div></div></a>
+                <a class="card" href="details-ol.html"><div class="card-left"><div class="icon">OL</div><div><div class="card-title">Open Learning Support Fund</div><div class="card-sub">Distance • ₹10,000 • 5 Feb 2026</div></div></div><div class="card-right"><div class="meta">Distance</div></div></a>
+              </div>
+            </div>
+
+          </main>
+
+          <aside class="sidebar">
+            <h3>How to use</h3>
+            <div class="small" style="margin-top:8px">Select answers, then click the group button that best matches you. Each revealed card is clickable to view details and application steps.</div>
+            <div class="sep"></div>
+            <h3>Support</h3>
+            <div class="small">Email: support@scholarmatch.org</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer"><div class="container">© ScholarMatch — Eligibility Test</div></footer>
+  </div>
+</body>
+</html>
